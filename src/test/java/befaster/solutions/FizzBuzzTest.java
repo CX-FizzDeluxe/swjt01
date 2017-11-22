@@ -10,7 +10,6 @@ public class FizzBuzzTest {
 
     @Test
     public void testFizz() {
-        assertEquals("fizz", FizzBuzz.fizzBuzz(3));
         assertEquals("fizz", FizzBuzz.fizzBuzz(6));
         assertEquals("fizz", FizzBuzz.fizzBuzz(9));
         assertEquals("fizz", FizzBuzz.fizzBuzz(32));
@@ -25,11 +24,6 @@ public class FizzBuzzTest {
         assertEquals("buzz", FizzBuzz.fizzBuzz(20));
     }
 
-    @Test
-    public void testFizzBuzzDeluxe() {
-//        assertEquals("fizz buzz deluxe", FizzBuzz.fizzBuzz());
-
-    }
     @Test
     public void testMultiple3And5() {
         assertEquals("fizz buzz", FizzBuzz.fizzBuzz(15));
@@ -69,19 +63,23 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void testFizzBuzzOddDeluxe() {
-        assertFalse(FizzBuzz.fizzBuzz(8888).contains("fake"));
-        assertTrue(FizzBuzz.fizzBuzz(7777).contains("fake"));
-
+    public void testFizzOddDeluxe() {
+        assertTrue(FizzBuzz.fizzBuzz(33).contains("fake"));
+        assertTrue(FizzBuzz.fizzBuzz(3).contains("fake"));
+        assertTrue(FizzBuzz.fizzBuzz(39).contains("fake"));
     }
 
     @Test
-    public void testFizzBuzzOddDeluxeErrors() {
-        assertEquals("deluxe", FizzBuzz.fizzBuzz(22));
-        assertEquals("deluxe", FizzBuzz.fizzBuzz(4444));
-        assertEquals("fake deluxe", FizzBuzz.fizzBuzz(11));
-        assertFalse(FizzBuzz.fizzBuzz(11).contains("fake"));
+    public void testBuzzOddDeluxe() {
+        assertTrue(FizzBuzz.fizzBuzz(45).contains("fake"));
+        assertTrue(FizzBuzz.fizzBuzz(55).contains("fake"));
+        assertTrue(FizzBuzz.fizzBuzz(105).contains("fake"));
+    }
 
+    @Test
+    public void testFizzBuzzDeluxe() {
+        assertFalse(FizzBuzz.fizzBuzz(36).contains("fake"));
+        assertFalse(FizzBuzz.fizzBuzz(30).contains("fake"));
     }
 
 }
