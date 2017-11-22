@@ -8,23 +8,17 @@ public class HelloTest {
 
     @Test
     public void testHelloWorld() {
-        assertEquals("Hello, World!", Hello.hello("Hello World"));
+        assertEquals("Hello, John!", Hello.hello("John"));
     }
 
     @Test
     public void testHelloWorldNull() {
-        assertEquals("Hello, World!", Hello.hello(null));
+        assertEquals(null, Hello.hello(null));
     }
 
     @Test
     public void testHelloWorldEmpty() {
-        assertEquals("Hello, World!", Hello.hello(""));
+        assertEquals(null, Hello.hello(""));
     }
 
-    @Test
-    public void testRealScenario() {
-        assertEquals("Hello, World!", Hello.hello("Craftsman"));
-        assertEquals("Hello, World!", Hello.hello("Mr. X"));
-
-    }
 }
