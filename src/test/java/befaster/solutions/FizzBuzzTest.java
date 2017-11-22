@@ -26,6 +26,11 @@ public class FizzBuzzTest {
     }
 
     @Test
+    public void testFizzBuzzDeluxe() {
+//        assertEquals("fizz buzz deluxe", FizzBuzz.fizzBuzz());
+
+    }
+    @Test
     public void testMultiple3And5() {
         assertEquals("fizz buzz", FizzBuzz.fizzBuzz(15));
         assertEquals("fizz buzz", FizzBuzz.fizzBuzz(30));
@@ -52,40 +57,6 @@ public class FizzBuzzTest {
     @Test(expected = IllegalArgumentException.class)
     public void testInvalidNumber10000() {
         FizzBuzz.fizzBuzz(10000);
-    }
-
-    @Test
-    public void testGenericTest() {
-        for (int i = 1; i < 9999; i++) {
-            assertEquals(getFizzBuzz(i), FizzBuzz.fizzBuzz(i));
-        }
-    }
-
-    private String getFizzBuzz (Integer number) {
-        boolean isFizz = number % 3 == 0 || number.toString().contains("3");
-        boolean isBuzz = number % 5 == 0 || number.toString().contains("5");
-        boolean isDeluxe = number > 10 && FizzBuzz.isIdentical(number);
-
-        if (isDeluxe && isFizz && isBuzz) {
-            return "fizz buzz deluxe";
-        }
-        if (isDeluxe) {
-            return "deluxe";
-        }
-        if (isFizz && isBuzz) {
-            return "fizz buzz";
-        }
-        if (isFizz) {
-            return "fizz";
-        }
-
-        if (isBuzz) {
-            return "buzz";
-        }
-
-        return number.toString();
-
-
     }
 
     @Test

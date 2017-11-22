@@ -22,11 +22,17 @@ public class FizzBuzz {
         if (isDeluxe && isFizz && isBuzz) {
             return "fizz buzz deluxe";
         }
-        if (isDeluxe) {
-            return "deluxe";
+        if (isDeluxe && isFizz) {
+            return "fizz deluxe";
+        }
+        if (isDeluxe && isBuzz) {
+            return "buzz deluxe";
         }
         if (isFizz && isBuzz) {
             return "fizz buzz";
+        }
+        if (isDeluxe) {
+            return "deluxe";
         }
         if (isFizz) {
             return "fizz";
