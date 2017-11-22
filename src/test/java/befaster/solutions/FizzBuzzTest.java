@@ -2,6 +2,8 @@ package befaster.solutions;
 
 import org.junit.Test;
 
+import java.util.Arrays;
+
 import static org.junit.Assert.*;
 
 public class FizzBuzzTest {
@@ -63,7 +65,8 @@ public class FizzBuzzTest {
     private String getFizzBuzz (Integer number) {
         boolean isFizz = number % 3 == 0 || number.toString().contains("3");
         boolean isBuzz = number % 5 == 0 || number.toString().contains("5");
-        boolean isDeluxe = number > 10 && number.toString().
+//        boolean isDeluxe = number > 10 && ;
+
         if (isFizz && isBuzz) {
             return "fizz buzz";
         }
@@ -78,5 +81,10 @@ public class FizzBuzzTest {
         return number.toString();
 
 
+    }
+
+    public testElementsIdentical() {
+        assertTrue()
+        FizzBuzz.isIdentical(8888);
     }
 }

@@ -2,6 +2,8 @@ package befaster.solutions;
 
 import befaster.runner.SolutionNotImplementedException;
 
+import java.util.Arrays;
+
 public class FizzBuzz {
 
     public static String fizzBuzz(Integer number) {
@@ -25,4 +27,7 @@ public class FizzBuzz {
         }
     }
 
+    public static void isIdentical(Integer number) {
+        Arrays.asList(number.toString().toCharArray()).stream().distinct().count();
+    }
 }
