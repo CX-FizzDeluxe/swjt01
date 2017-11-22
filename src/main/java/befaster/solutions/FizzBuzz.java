@@ -19,30 +19,45 @@ public class FizzBuzz {
         boolean isFizz = multiple3 || contains3;
         boolean isBuzz = multiple5 || contains5;
         boolean isDeluxe = number > 10 && isIdentical(number);
-        if (isDeluxe && isFizz && isBuzz) {
-            return "fizz buzz deluxe";
+
+        String numberCategory = "";
+        if (isFizz) {
+            numberCategory += "fizz ";
         }
-        if (isDeluxe && isFizz) {
-            return "fizz deluxe";
-        }
-        if (isDeluxe && isBuzz) {
-            return "buzz deluxe";
-        }
-        if (isFizz && isBuzz) {
-            return "fizz buzz";
+        if (isBuzz) {
+            numberCategory += "buzz ";
+
         }
         if (isDeluxe) {
-            return "deluxe";
+            numberCategory += "deluxe ";
         }
-        if (isFizz) {
-            return "fizz";
+//        if (isDeluxe && isFizz && isBuzz) {
+//            return "fizz buzz deluxe";
+//        }
+//        if (isDeluxe && isFizz) {
+//            return "fizz deluxe";
+//        }
+//        if (isDeluxe && isBuzz) {
+//            return "buzz deluxe";
+//        }
+//        if (isFizz && isBuzz) {
+//            return "fizz buzz";
+//        }
+//        if (isDeluxe) {
+//            return "deluxe";
+//        }
+//        if (isFizz) {
+//            return "fizz";
+//        }
+//
+//        if (isBuzz) {
+//            return "buzz";
+//        }
+        if ("".equals(numberCategory)) {
+            return number.toString();
+        } else {
+            return numberCategory.de
         }
-
-        if (isBuzz) {
-            return "buzz";
-        }
-
-        return number.toString();
     }
 
     public static boolean isIdentical(Integer number) {
