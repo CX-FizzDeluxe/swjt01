@@ -16,7 +16,6 @@ public class FizzBuzzTest {
         assertEquals("fizz", FizzBuzz.fizzBuzz(32));
         assertEquals("fizz", FizzBuzz.fizzBuzz(3467));
         assertEquals("fizz", FizzBuzz.fizzBuzz(9993));
-        assertEquals("fizz", FizzBuzz.fizzBuzz(9999));
     }
 
     @Test
@@ -92,6 +91,7 @@ public class FizzBuzzTest {
     @Test
     public void testElementsIdentical() {
         assertTrue(FizzBuzz.isIdentical(8888));
+        assertTrue(FizzBuzz.isIdentical(20));
         assertTrue(FizzBuzz.isIdentical(77));
         assertTrue(FizzBuzz.isIdentical(33));
         assertTrue(FizzBuzz.isIdentical(9999));

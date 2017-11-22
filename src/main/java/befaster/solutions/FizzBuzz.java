@@ -19,17 +19,22 @@ public class FizzBuzz {
         boolean isDeluxe = number > 10 && isIdentical(number);
         if (isDeluxe && isFizz && isBuzz) {
             return "fizz buzz deluxe";
-        } else if (isDeluxe) {
-            return "deluxe";
-        } else if (isFizz && isBuzz) {
-            return "fizz buzz";
-        } else if (isFizz) {
-            return "fizz";
-        } else if (isBuzz) {
-            return "buzz";
-        } else {
-            return number.toString();
         }
+        if (isDeluxe) {
+            return "deluxe";
+        }
+        if (isFizz && isBuzz) {
+            return "fizz buzz";
+        }
+        if (isFizz) {
+            return "fizz";
+        }
+
+        if (isBuzz) {
+            return "buzz";
+        }
+
+        return number.toString();
     }
 
     public static boolean isIdentical(Integer number) {
