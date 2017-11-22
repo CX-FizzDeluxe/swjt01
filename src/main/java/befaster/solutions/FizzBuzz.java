@@ -10,11 +10,15 @@ public class FizzBuzz {
         }
         boolean multiple3 = number%3 == 0;
         boolean multiple5 = number%5 == 0;
-        if (multiple3 && multiple5) {
+        boolean contains3 = String.valueOf(number).contains("3");
+        boolean contains5 = String.valueOf(number).contains("5");
+        boolean isFizz = multiple3 || contains3;
+        boolean isBuzz = multiple5 || contains5;
+        if (isFizz && isBuzz) {
             return "fizz buzz";
-        } else if (multiple3) {
+        } else if (isFizz) {
             return "fizz";
-        } else if (multiple5) {
+        } else if (isBuzz) {
             return "buzz";
         } else {
             return number.toString();
