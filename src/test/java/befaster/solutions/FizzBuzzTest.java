@@ -14,7 +14,7 @@ public class FizzBuzzTest {
         assertEquals("fizz", FizzBuzz.fizzBuzz(9));
         assertEquals("fizz", FizzBuzz.fizzBuzz(32));
         assertEquals("fizz", FizzBuzz.fizzBuzz(3467));
-        assertEquals("fizz", FizzBuzz.fizzBuzz(9993));
+        assertEquals("fizz fake deluxe", FizzBuzz.fizzBuzz(9993));
     }
 
     @Test
@@ -26,8 +26,8 @@ public class FizzBuzzTest {
 
     @Test
     public void testMultiple3And5() {
-        assertEquals("fizz buzz", FizzBuzz.fizzBuzz(15));
-        assertEquals("fizz buzz", FizzBuzz.fizzBuzz(30));
+        assertEquals("fizz buzz fake deluxe", FizzBuzz.fizzBuzz(15));
+        assertEquals("fizz buzz ", FizzBuzz.fizzBuzz(30));
         assertEquals("fizz buzz", FizzBuzz.fizzBuzz(45));
         assertEquals("fizz buzz", FizzBuzz.fizzBuzz(3355));
         assertEquals("fizz buzz", FizzBuzz.fizzBuzz(7357));
