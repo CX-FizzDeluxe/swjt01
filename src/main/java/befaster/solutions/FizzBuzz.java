@@ -19,7 +19,7 @@ public class FizzBuzz {
         boolean isFizz = multiple3 || contains3;
         boolean isBuzz = multiple5 || contains5;
         boolean isDeluxe = number > 10 && isIdentical(number);
-        boolean isOdd = number%2 == 0;
+        boolean isOdd = number%2 == 1;
         String numberCategory = "";
         if (isFizz) {
             numberCategory += "fizz ";
