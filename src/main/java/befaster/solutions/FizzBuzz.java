@@ -4,6 +4,7 @@ import befaster.runner.SolutionNotImplementedException;
 
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Set;
 
 public class FizzBuzz {
 
@@ -39,6 +40,11 @@ public class FizzBuzz {
     }
 
     public static boolean isIdentical(Integer number) {
-        return new HashSet<>(Arrays.asList(number.toString().toCharArray())).size() == 1;
+        String str = number.toString();
+        Set identical = new HashSet<>();
+        for (int i = 0; i < str.length(); i ++) {
+            identical.add(str.charAt(i));
+        }
+        return identical.size() == 1;
     }
 }

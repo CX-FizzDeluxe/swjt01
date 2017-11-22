@@ -64,7 +64,7 @@ public class FizzBuzzTest {
     private String getFizzBuzz (Integer number) {
         boolean isFizz = number % 3 == 0 || number.toString().contains("3");
         boolean isBuzz = number % 5 == 0 || number.toString().contains("5");
-        boolean isDeluxe = number > 10 && Arrays.asList(number.toString().toCharArray()).stream().distinct().count() == 1;
+        boolean isDeluxe = FizzBuzz.isIdentical(number);
 
         if (isDeluxe && isFizz && isBuzz) {
             return "fizz buzz deluxe";
