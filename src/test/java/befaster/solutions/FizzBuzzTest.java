@@ -22,8 +22,6 @@ public class FizzBuzzTest {
         assertEquals("buzz", FizzBuzz.fizzBuzz(5));
         assertEquals("buzz", FizzBuzz.fizzBuzz(10));
         assertEquals("buzz", FizzBuzz.fizzBuzz(20));
-        assertEquals("buzz", FizzBuzz.fizzBuzz(5331));
-        assertEquals("buzz", FizzBuzz.fizzBuzz(9957));
     }
 
     @Test
@@ -33,6 +31,8 @@ public class FizzBuzzTest {
         assertEquals("fizz buzz", FizzBuzz.fizzBuzz(45));
         assertEquals("fizz buzz", FizzBuzz.fizzBuzz(3355));
         assertEquals("fizz buzz", FizzBuzz.fizzBuzz(7357));
+        assertEquals("fizz buzz", FizzBuzz.fizzBuzz(5331));
+        assertEquals("fizz buzz", FizzBuzz.fizzBuzz(9957));
     }
 
     @Test
@@ -53,4 +53,10 @@ public class FizzBuzzTest {
         FizzBuzz.fizzBuzz(10000);
     }
 
+    @Test
+    public void testGenericTest() {
+        for (int i = 1; i < 9999; i++) {
+            
+        }
+    }
 }
