@@ -19,7 +19,7 @@ public class FizzBuzz {
         boolean isFizz = multiple3 || contains3;
         boolean isBuzz = multiple5 || contains5;
         boolean isDeluxe = number > 10 && isIdentical(number);
-
+        boolean isOdd = number%2 == 0;
         String numberCategory = "";
         if (isFizz) {
             numberCategory += "fizz ";
@@ -29,6 +29,9 @@ public class FizzBuzz {
 
         }
         if (isDeluxe) {
+            if (isOdd) {
+                numberCategory += "fake ";
+            }
             numberCategory += "deluxe ";
         }
 //        if (isDeluxe && isFizz && isBuzz) {
@@ -56,7 +59,7 @@ public class FizzBuzz {
         if ("".equals(numberCategory)) {
             return number.toString();
         } else {
-            return numberCategory.de
+            return numberCategory.substring(0, numberCategory.length() - 1);
         }
     }
 
