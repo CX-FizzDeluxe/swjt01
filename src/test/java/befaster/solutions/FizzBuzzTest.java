@@ -91,7 +91,7 @@ public class FizzBuzzTest {
     @Test
     public void testElementsIdentical() {
         assertTrue(FizzBuzz.isIdentical(8888));
-        assertTrue(FizzBuzz.isIdentical(20));
+        assertFalse(FizzBuzz.isIdentical(20));
         assertTrue(FizzBuzz.isIdentical(77));
         assertTrue(FizzBuzz.isIdentical(33));
         assertTrue(FizzBuzz.isIdentical(9999));

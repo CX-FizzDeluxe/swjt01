@@ -38,6 +38,7 @@ public class FizzBuzz {
     }
 
     public static boolean isIdentical(Integer number) {
-        return Arrays.asList(number.toString().toCharArray()).stream().distinct().count() == 1;
+
+        return Arrays.asList(number.toString().toCharArray()).stream().distinct().limit(2).count() <= 1;
     }
 }
