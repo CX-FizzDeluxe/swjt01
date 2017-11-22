@@ -28,7 +28,7 @@ public class FizzBuzz {
             numberCategory += "buzz ";
 
         }
-        if (isDeluxe) {
+        if (isFizz || isBuzz){
             if (isOdd) {
                 numberCategory += "fake ";
             }
