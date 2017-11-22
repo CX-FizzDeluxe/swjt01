@@ -30,10 +30,10 @@ public class FizzBuzzTest {
 
     @Test
     public void testNotMultiple3And5() {
-        assertEquals("2", FizzBuzz.fizzBuzz(1));
+        assertEquals("1", FizzBuzz.fizzBuzz(1));
         assertEquals("2", FizzBuzz.fizzBuzz(2));
         assertEquals("4", FizzBuzz.fizzBuzz(4));
-        assertEquals("6", FizzBuzz.fizzBuzz(6));
+        assertEquals("7", FizzBuzz.fizzBuzz(7));
     }
 
     @Test(expected = IllegalArgumentException.class)
