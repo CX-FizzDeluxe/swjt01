@@ -77,9 +77,15 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void testFizzBuzzDeluxe() {
+    public void testFizzDeluxe() {
         assertFalse(FizzBuzz.fizzBuzz(36).contains("fake"));
         assertFalse(FizzBuzz.fizzBuzz(30).contains("fake"));
     }
 
+    @Test
+    public void testBuzzDeluxe() {
+        assertFalse(FizzBuzz.fizzBuzz(50).contains("fake"));
+        assertFalse(FizzBuzz.fizzBuzz(60).contains("fake"));
+        assertFalse(FizzBuzz.fizzBuzz(700).contains("fake"));
+    }
 }
