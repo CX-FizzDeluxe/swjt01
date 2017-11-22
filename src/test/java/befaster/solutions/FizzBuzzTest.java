@@ -67,6 +67,12 @@ public class FizzBuzzTest {
         boolean isBuzz = number % 5 == 0 || number.toString().contains("5");
         boolean isDeluxe = number > 10 && Arrays.asList(number.toString().toCharArray()).stream().distinct().count() == 1;
 
+        if (isDeluxe && isFizz && isBuzz) {
+            return "fizz buzz deluxe";
+        }
+        if (isDeluxe) {
+            return "deluxe";
+        }
         if (isFizz && isBuzz) {
             return "fizz buzz";
         }
