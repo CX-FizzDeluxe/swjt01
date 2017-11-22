@@ -67,4 +67,12 @@ public class FizzBuzzTest {
         assertTrue(FizzBuzz.isIdentical(33));
         assertTrue(FizzBuzz.isIdentical(9999));
     }
+
+    @Test
+    public void testFizzBuzzOddDeluxe() {
+        assertTrue(FizzBuzz.fizzBuzz(8888).contains("fake"));
+        assertFalse(FizzBuzz.fizzBuzz(7777).contains("fake"));
+
+    }
+
 }
