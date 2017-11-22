@@ -28,10 +28,10 @@ public class FizzBuzzTest {
     public void testMultiple3And5() {
         assertEquals("fizz buzz fake deluxe", FizzBuzz.fizzBuzz(15));
         assertEquals("fizz buzz deluxe", FizzBuzz.fizzBuzz(30));
-        assertEquals("fizz buzz", FizzBuzz.fizzBuzz(45));
-        assertEquals("fizz buzz", FizzBuzz.fizzBuzz(3355));
+        assertEquals("fizz buzz fake deluxe", FizzBuzz.fizzBuzz(45));
+        assertEquals("fizz buzz fake deluxe", FizzBuzz.fizzBuzz(3355));
         assertEquals("fizz buzz", FizzBuzz.fizzBuzz(7357));
-        assertEquals("fizz buzz", FizzBuzz.fizzBuzz(5331));
+        assertEquals("fizz buzz fake deluxe", FizzBuzz.fizzBuzz(5331));
         assertEquals("fizz buzz", FizzBuzz.fizzBuzz(9957));
     }
 
