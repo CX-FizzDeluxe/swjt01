@@ -18,7 +18,7 @@ public class FizzBuzz {
         boolean contains5 = String.valueOf(number).contains("5");
         boolean isFizz = multiple3 || contains3;
         boolean isBuzz = multiple5 || contains5;
-        boolean isDeluxe = number > 10 && isIdentical(number);
+        boolean isDeluxe = (multiple3 && contains3) || (multiple5 && contains5);
         boolean isOdd = number%2 == 1;
         String numberCategory = "";
         if (isFizz) {
