@@ -7,18 +7,23 @@ import static org.junit.Assert.*;
 public class FizzBuzzTest {
 
     @Test
-    public void testMultiple3() {
+    public void testFizz() {
         assertEquals("fizz", FizzBuzz.fizzBuzz(3));
         assertEquals("fizz", FizzBuzz.fizzBuzz(6));
         assertEquals("fizz", FizzBuzz.fizzBuzz(9));
+        assertEquals("fizz", FizzBuzz.fizzBuzz(32));
+        assertEquals("fizz", FizzBuzz.fizzBuzz(3467));
+        assertEquals("fizz", FizzBuzz.fizzBuzz(9993));
         assertEquals("fizz", FizzBuzz.fizzBuzz(9999));
     }
 
     @Test
-    public void testMultiple5() {
+    public void testBuzz() {
         assertEquals("buzz", FizzBuzz.fizzBuzz(5));
         assertEquals("buzz", FizzBuzz.fizzBuzz(10));
         assertEquals("buzz", FizzBuzz.fizzBuzz(20));
+        assertEquals("buzz", FizzBuzz.fizzBuzz(5331));
+        assertEquals("buzz", FizzBuzz.fizzBuzz(9957));
     }
 
     @Test
@@ -26,6 +31,8 @@ public class FizzBuzzTest {
         assertEquals("fizz buzz", FizzBuzz.fizzBuzz(15));
         assertEquals("fizz buzz", FizzBuzz.fizzBuzz(30));
         assertEquals("fizz buzz", FizzBuzz.fizzBuzz(45));
+        assertEquals("fizz buzz", FizzBuzz.fizzBuzz(3355));
+        assertEquals("fizz buzz", FizzBuzz.fizzBuzz(7357));
     }
 
     @Test
