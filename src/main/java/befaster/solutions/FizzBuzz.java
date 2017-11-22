@@ -3,6 +3,7 @@ package befaster.solutions;
 import befaster.runner.SolutionNotImplementedException;
 
 import java.util.Arrays;
+import java.util.HashSet;
 
 public class FizzBuzz {
 
@@ -38,7 +39,6 @@ public class FizzBuzz {
     }
 
     public static boolean isIdentical(Integer number) {
-
-        return Arrays.asList(number.toString().toCharArray()).stream().distinct().limit(2).count() <= 1;
+        return new HashSet<>(Arrays.asList(number.toString().toCharArray())).size() == 1;
     }
 }
