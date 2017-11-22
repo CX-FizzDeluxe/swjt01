@@ -75,4 +75,13 @@ public class FizzBuzzTest {
 
     }
 
+    @Test
+    public void testFizzBuzzOddDeluxeErrors() {
+        assertEquals("deluxe", FizzBuzz.fizzBuzz(22));
+        assertEquals("deluxe", FizzBuzz.fizzBuzz(4444));
+        assertEquals("fake deluxe", FizzBuzz.fizzBuzz(11));
+        assertFalse(FizzBuzz.fizzBuzz(11).contains("fake"));
+
+    }
+
 }
