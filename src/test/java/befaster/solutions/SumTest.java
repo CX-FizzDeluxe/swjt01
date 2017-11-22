@@ -12,6 +12,16 @@ public class SumTest {
         assertThat(Sum.sum(1, 1), equalTo(2));
     }
 
+    @Test
+    public void compute_sumTest2() {
+        assertThat(Sum.sum(0, 100), equalTo(100));
+    }
+
+    @Test
+    public void compute_sumTest3() {
+        assertThat(Sum.sum(100, 0), equalTo(100));
+    }
+
     @Test(expected = IllegalArgumentException.class)
     public void testInvalidNumbersParam1LesserThanZero() {
         Sum.sum(-1, 10);
